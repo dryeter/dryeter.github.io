@@ -8,6 +8,72 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rectangle {
+            background-color: darkgray;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .white-text {
+            color: white;
+        }
+
+        .tile {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #3498db; /* Blue color */
+            color: #fff; /* Text color */
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tile:hover {
+            background-color: #e74c3c; /* Red color on hover */
+        }
+
+        .tile[data-text]:hover::before {
+            content: attr(data-text);
+            display: block;
+            font-size: 30px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        /* Define colors for each tile */
+        .tile:nth-child(1) {
+            background-color: #f39c12; /* Orange */
+        }
+
+        .tile:nth-child(2) {
+            background-color: #27ae60; /* Green */
+        }
+
+        .tile:nth-child(3) {
+            background-color: #d35400; /* Red-Orange */
+        }
+
+        .tile:nth-child(4) {
+            background-color: #9b59b6; /* Purple */
+        }
+
+        .tile:nth-child(5) {
+            background-color: #c0392b; /* Dark Red */
+        }
+    </style>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -45,9 +111,26 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>This webpage is dedicated to showcasing the work of<br>Dr. Ibrahim Yeter's Research Team</h1>
-								<p>The research team consistes of individuals from diverse backgrounds conducting researching on a distinct variety of areas to reach the common goal of bettering the use of Artificial Intelligence in Education</p>
+								<h1>Welcome to the Official Website of Dr. Ibrahim Yeter.</h1>
+								<p>Embark on a captivating journey as we delve into the research conducted by Dr. Ibrahim Yeter and his team.</p>
 							</header>
+
+							<div class="container">
+						        <div class="tile" data-text="Yielding">Y</div>
+						        <div class="tile" data-text="Empathy">E</div>
+						        <div class="tile" data-text="Truthfulness">T</div>
+						        <div class="tile" data-text="Excellence">E</div>
+						        <div class="tile" data-text="Respect">R</div>
+						    </div>
+
+						    <br>
+						    <br>
+						    <br>
+
+						    <div class="rectangle">
+						        <h2 class="white-text">Current Team</h2>
+						    </div>
+
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
@@ -231,19 +314,6 @@
 										</div>
 									</a>
 								</article>
-								<article class="style3">
-									<span class="image">
-										<span class="image-container">
-											<img src="images/imannuelhendra.jpg" style="width: 400px; height: 400px;" alt="" />
-										</span>
-									</span>
-									<a href="https://dryeter.github.io/imannuelhendra/">
-										<h2>Immanuel Hendra</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
 								<article class="style4">
 									<span class="image">
 										<span class="image-container">
@@ -258,6 +328,32 @@
 									</a>
 								</article>
 							</section>
+							<br>
+							<br>
+
+							<div class="rectangle">
+								<h2 class="white-text"> Former Team </h2>
+							</div>
+
+							<section class="tiles">
+								<article class="style3">
+									<span class="image">
+										<span class="image-container">
+											<img src="images/imannuelhendra.jpg" style="width: 400px; height: 400px;" alt="" />
+										</span>
+									</span>
+									<a href="https://dryeter.github.io/imannuelhendra/">
+										<h2>Immanuel Hendra</h2>
+										<div class="content">
+											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+										</div>
+									</a>
+								</article>
+							</section>
+
+
+
+
 						</div>
 					</div>
 
